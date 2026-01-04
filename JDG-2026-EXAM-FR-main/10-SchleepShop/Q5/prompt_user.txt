@@ -1,0 +1,15 @@
+# INSTRUCTIONS POUR L'ÉTUDIANT
+# Complétez ce fichier avec un template de prompt utilisateur.
+# Le template doit inclure des variables pour :
+# - Informations démographiques (âge, sexe, etc.)
+# - Habitudes de sommeil actuelles
+# - Problèmes rencontrés
+# - Objectifs recherchés
+# - Préférences personnelles
+
+# Utilisez le format {VARIABLE_NAME} pour les variables qu'un utilisateur devrait remplir.
+
+# VOTRE TEMPLATE DE PROMPT UTILISATEUR CI-DESSOUS :
+# ===================================================
+
+[À COMPLÉTER]

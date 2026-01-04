@@ -1,0 +1,26 @@
+version: '1'
+services:
+  postgres:
+    image: postgres:latest
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: csgames
+      POSTGRES_PASSWORD: csgames
+      POSTGRES_DB: csgames
+  ctf-web:
+    image: thesunside/hidden:latest # ctf-web -- this image is built for both AMD64 architecture + ARM64 architecture
+    ports:
+      - "80:3000" 
+      # You can change the destination port if needed to another one for an easier user access,
+      # NOTE: consider the ctf-web-user as using http://ctf-web:3000 internally, so changing this port won't affect its functionality
+      # Example: "80:3000" to "3000:3000" if theres a conflict on port 80 for your own use (host machine)
+      # Usage: localhost in the browser becomes localhost:3000 instead of just localhost(:80 is the default)
+    depends_on:
+      - postgres
+    # Could be useful to place a restart policy in case of crash and healthcheck failure
+  ctf-web-user:
+    image: thesunside/competition:latest # ctf-web-user -- Only available for AMD64 architecture, not exactly necessary for the CTF, but useful to know/have...
+    platform: linux/amd64
+    depends_on:
+      - ctf-web

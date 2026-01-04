@@ -1,0 +1,103 @@
+📦 files 🏠
+
+💭 ===== DATA STRUCTURES =====
+
+💭 --- Structure des données d'entrée ---
+🐇 🧩 🍇
+	🖍🆕 satisfaction 🔢
+	🖍🆕 bedtime 🔢
+	🖍🆕 states 🍨🐚🔡🍆
+
+	🆕 🍼 satisfaction 🔢 🍼 bedtime 🔢 🍼 states 🍨🐚🔡🍆 🍇
+	🍉
+	
+	❗️ 🌟 ➡️ 🔢 🍇 ↩️ satisfaction 🍉
+	❗️ 🛌 ➡️ 🔢 🍇 ↩️ bedtime 🍉
+	❗️ 💤 ➡️ 🍨🐚🔡🍆 🍇 ↩️ states 🍉
+	
+🍉
+
+💭 ===== LOGIC CODE =====
+
+💭 --- Main class ---
+🐇 🧙 🍇
+	🆕 🍇🍉
+
+	💭 --- Parse Method (ne pas toucher) ---
+	❗️ 📂 ➡️ 🍨🐚🧩🍆 🍇
+		🆕🍨🐚🧩🍆❗️ ➡️ 🖍🆕 rows
+		
+		💭 Read file
+		🍺 📇 🐇 📄 🔤input.txt🔤 ❗️ ➡️ data
+		🍺 🔡 data ❗️ ➡️ content
+		
+		💭 Le retour de ligne est important ici 
+		🔫 content 🔤
+🔤 ❗️ ➡️ lines
+		
+		0 ➡️ 🖍🆕 lineIndex
+		🔂 line lines 🍇
+			lineIndex ➕ 1 ➡️ 🖍 lineIndex
+			📏 🎶line❗️ ❓ ➡️ lineLength
+			↪️ lineLength ▶️ 0 🍇
+				🔫 line 🔤 🔤❗️ ➡️ parts
+				🐽 parts 0❗️ ➡️ starsPart
+				📏 🎶starsPart❗️ ❓ ➡️ satisfactionCount
+				
+				🐽 parts 1❗️ ➡️ timePart
+				📏 🎶timePart❗️ ❓ ➡️ timePartLength
+				timePartLength ➖ 1 ➡️ hourStringLength
+				🔪 timePart 1 hourStringLength❗️ ➡️ hourString
+				🔢 hourString 10❗️ ➡️ hourOptional
+				🍺 hourOptional ➡️ bedtimeHour
+				
+				🐽 parts 2❗️ ➡️ statesPart
+				🆕🍨🐚🔡🍆❗️ ➡️ 🖍🆕 lineStates
+				🔂 stateChar statesPart 🍇
+					🔡 stateChar ❗️ ➡️ stateString
+					🐻 lineStates stateString❗️
+				🍉
+				
+				🆕🧩 satisfactionCount bedtimeHour lineStates ❗️ ➡️ row
+				🐻 rows row❗️
+			🍉
+		🍉
+	 	↩️ rows
+	🍉
+
+
+	💭 --- Method A: Classement de satisfaction moyenne par heure de coucher  ---
+	❗️ 🅰️ rows 🍨🐚🧩🍆 🍇
+		😀 🔤🏆🔤❗️
+
+		💭 TODO
+
+	🍉
+
+	💭 --- Method B: État de sommeil le plus fréquent par heure absolue ---
+	❗️ 🅱️ rows 🍨🐚🧩🍆 🍇
+		😀 🔤🔤❗️
+		😀 🔤🕰️🔤❗️
+		
+		💭 TODO
+
+	🍉
+
+	💭 --- Method C: Efficacité moyenne du sommeil ---
+	❗️ ©️ rows 🍨🐚🧩🍆 🍇
+		😀 🔤🔤❗️
+		😀 🔤📊🔤❗️
+
+		💭 TODO
+
+	🍉
+🍉
+
+💭 --- Main Program (ne pas toucher) ---
+🏁 🍇
+	🆕🧙❗️ ➡️ analyzer
+	📂 analyzer❗️ ➡️ rows
+	🅰️ analyzer rows❗️
+	🅱️ analyzer rows❗️
+	©️ analyzer rows❗️
+🍉

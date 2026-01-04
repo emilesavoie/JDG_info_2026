@@ -1,0 +1,9 @@
+services:
+  emojicode:
+    build: .
+    container_name: emojicode-dev
+    volumes:
+      - ../:/workspace
+    working_dir: /workspace
+    stdin_open: true
+    tty: true

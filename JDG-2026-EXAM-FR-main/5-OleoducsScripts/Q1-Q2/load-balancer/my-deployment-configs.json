@@ -1,0 +1,6 @@
+{
+    "servers": [
+        { "domain": "localhost", "port": 3000, "protocol": "http", "redisPort": 6379 },
+        { "domain": "example", "port": 3000, "protocol": "http", "redisPort": 6379 }
+    ]
+}

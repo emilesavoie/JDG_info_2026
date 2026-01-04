@@ -1,0 +1,14 @@
+services:
+  consult-db-slave:
+    image: consult-db-slave
+    #Ports used: 3000 for app, 6379 for redis by default
+    depends_on:
+      - load-balancer
+    network_mode: "host"
+
+  load-balancer:
+  #Ports used: 3001 for app
+    image: load-balancer
+    ports:
+      - "3001:3001"
+    network_mode: "host"

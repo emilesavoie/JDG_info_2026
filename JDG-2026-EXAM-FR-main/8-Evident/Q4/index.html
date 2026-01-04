@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Prototype d'inspection - Evident</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>InspectionApp v0.1</h1>
+    </header>
+
+    <main>
+      <section id="form-area">
+        <h2>Nouvelle inspection</h2>
+        <form id="inspection-form">
+          <label>ID inspection <input type="text" id="inspect-id" /></label>
+          <label
+            >Matériau
+            <select id="material">
+              <option>Acier</option>
+              <option>Aluminium</option>
+              <option>Composite</option>
+            </select></label
+          >
+          <label>Localisation <input type="text" id="location" /></label>
+          <label
+            >Notes<br />
+            <textarea id="notes"></textarea>
+          </label>
+          <label
+            ><input type="checkbox" id="has-anomaly" checked /> Anomalie
+            détectée</label
+          >
+          <p class="warning-text">
+            En décochant cette case, vous assumez l'entière responsabilité en
+            cas de problème ultérieur.
+          </p>
+          <div class="actions">
+            <button type="button" id="cancel">Annuler</button>
+            <button type="submit" id="submit">Soumettre</button>
+          </div>
+        </form>
+      </section>
+
+      <section id="metrics">
+        <h2>Métriques</h2>
+        <div class="card">
+          Inspections aujourd'hui: <span id="count">0</span>
+        </div>
+        <div class="card">Anomalies: <span id="issues">0</span></div>
+        <div class="card">Taux de conformité: <span id="rate">100%</span></div>
+        <div class="card">Dernière inspection: <span id="last">-</span></div>
+      </section>
+
+      <section id="recommendations">
+        <h2>Recommandations</h2>
+        <ul id="reco-list">
+          <li>-- Aucune --</li>
+        </ul>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,13 @@
+# INSTRUCTIONS POUR L'ÉTUDIANT
+# Complétez ce fichier avec un prompt système robuste.
+# Le prompt système doit inclure :
+# - Le rôle de l'IA (expert en sommeil)
+# - Le ton et le style de communication
+# - Les contraintes à respecter
+# - Le format de sortie attendu
+# - Les limites de l'IA
+
+# VOTRE PROMPT SYSTÈME CI-DESSOUS :
+# =====================================
+
+[À COMPLÉTER]
